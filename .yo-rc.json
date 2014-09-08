@@ -1,0 +1,12 @@
+{
+  "generator-backbone": {
+    "appPath": "app",
+    "appName": "UberApiPlay",
+    "testFramework": "mocha",
+    "templateFramework": "lodash",
+    "coffee": false,
+    "compassBootstrap": false,
+    "includeRequireJS": false
+  },
+  "generator-mocha": {}
+}
