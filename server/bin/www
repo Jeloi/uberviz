@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var debug = require('debug')('uber-api-play');
+var debug = require('debug')('debug');
 var app = require('../app');
 
 app.set('port', process.env.PORT || 3000);
