@@ -5,9 +5,6 @@ var uberConfig = require('./auth').uber;
 
 
 module.exports = function(passport, baseURL) {
-	console.log(uberConfig.clientID);
-	console.log(uberConfig.clientSecret);
-	console.log(baseURL);
 
 	// required for persistent login sessions
 	// passport needs ability to serialize and unserialize users out of session
@@ -25,14 +22,17 @@ module.exports = function(passport, baseURL) {
 	});
 
 	passport.use(new UberStrategy({
-	    clientID: uberConfig.clientID,
-	    clientSecret: uberConfig.clientSecret,
-	    callbackURL: baseURL+"/auth/uber/callback"
-	  },
-	  function(accessToken, refreshToken, profile, done) {
-	    User.findOrCreate({ uberid: profile.id }, function (err, user) {
-	      return done(err, user);
-	    });
-	  }
+		// Configs passed to Strategy
+			clientID: uberConfig.clientID,
+			clientSecret: uberConfig.clientSecret,
+			callbackURL: baseURL+"/auth/uber/callback",
+			scope: "history"
+		},
+		// Verify function passed to strategy
+		function(accessToken, refreshToken, profile, done) {
+		  User.findOrCreate({ uberid: profile.id }, function (err, user) {
+		    return done(err, user);
+		  });
+		}
 	));
 }

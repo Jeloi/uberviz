@@ -62,8 +62,14 @@ if (app.get('env') === 'production') {
     });
 }
 
-// Pass passport obj for configuration, and baseUrl for callbackURL
+// Pass passport for configuration, and baseUrl for callbackURL
 require('./config/passport')(passport, app.get('baseURL'));
+
+app.use(passport.initialize());
+app.use(passport.session()); // persistent login sessions
+
+// Routes
+require('./routes.js')(app, passport); // load our routes and pass in our app and fully configured passport
 
 
 
