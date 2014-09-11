@@ -23,9 +23,10 @@ module Helpers
     end
   end
 
+  # Use Haversine method to get the distance between two lat/long coords. Returns miles
   def haversine(lat1, long1, lat2, long2)
     dtor = Math::PI/180
-    r = 3959
+    r = 3959 # radius of earth
    
     rlat1 = lat1 * dtor 
     rlong1 = long1 * dtor 

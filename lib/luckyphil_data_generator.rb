@@ -22,9 +22,9 @@ class Phil
   W_WANDER_MILES = 0.5
 
   # Ranges for meal times, expressed as hours from start of day (e.g 0 = 12am)
-  BREAKFAST_HOURS = [11,13] # Chipotles open at 11am
-  LUNCH_HOURS = [13,17]
-  DINNER_HOURS = [17,22] # And close at 10pm
+  BREAKFAST = [11,13] # Chipotles open at 11am
+  LUNCH = [13,17]
+  DINNER = [17,22] # And close at 10pm
 
   attr_accessor :today, :current_location, :current_address, :last_meal, :output_file, :last_driver, :visited_chipotles, :trip_history
 
@@ -42,10 +42,10 @@ class Phil
   def is_bored?
     
   end
-  # Trip methods assess the existential state of Phil, plan his next Uber trip, write the trip to Json output, then update the state of Phil
-  def go_to_breakfast
+
+  def go_to meal_hours
     trip = {} # Trip Hash
-    trip[:request_time] = today + rand_between(BREAKFAST_HOURS).hours
+    trip[:request_time] = today + rand_between(meal_hours).hours
     trip[:start_time] = (trip[:request_time] + rand(3..8).minutes)
     chipotle = DB[:chipotles][id: rand(1..60)] # Randomly pick a Chipotle
     trip[:end_location] = {
@@ -54,18 +54,6 @@ class Phil
       longitude: chipotle[:lng],
     }
     generate_trip trip
-  end
-
-  def go_to_lunch
-    chipotle = DB[:chipotles][id: rand(1..60)]
-
-    
-  end
-
-  def go_to_dinner
-    chipotle = DB[:chipotles][id: rand(1..60)]
-
-    
   end
 
   def go_home
@@ -97,7 +85,7 @@ class Phil
     }
     trip = default.merge(trip)
 
-    trip[:distance] = ""
+    trip[:distance] = haversine trip[:start_location][:latitude], trip[:start_location][:longitude], trip[:end_location][:latitude], trip[:end_location][:longitude]
     # Convert times to Unix times
     # trip[:end_time] = "".to_time.utc.to_i
     trip[:request_time] = trip[:request_time].to_time.utc.to_i
@@ -135,29 +123,35 @@ def generate_awesome_month start_date, output_file
   luckyphil.output_file = output_file
   luckyphil.current_location = Phil::HOME # Home is where it all started
   luckyphil.current_address = Phil::HOME_ADDRESS
-  luckyphil.last_meal = nil # Phil is hungry
+
+  breakfast = Phil::BREAKFAST
+  lunch = Phil::LUNCH
+  dinner = Phil::DINNER
 
   # For each of the 31 days of the awesome month..
   (0..30).each do | num |
     # Ahh a new day!
     luckyphil.today = start_date + num.days
-    puts luckyphil.today
+    luckyphil.last_meal = nil # Phil is hungry
 
-    # # Breakfast
-    luckyphil.go_to_breakfast
+    # Breakfast
+    luckyphil.go_to breakfast
     # luckyphil.wander
 
     # # Lunch
-    luckyphil.go_to_lunch
+    luckyphil.go_to lunch
     # luckyphil.wander
 
     # # If Phil is tuesday livin' he goes home for tacos
-    # if luckyphil.is_tuesday_living?
-    #   luckyphil.go_home
-    #   break # That's a wrap on the day
-    # end
+    if luckyphil.is_tuesday_living?
+      # luckyphil.go_home
+      break # That's a wrap on the day
+    end
 
-    # luckyphil.go_to_dinner
+    luckyphil.go_to dinner
+    
+    # luckyphil.go_home
+
   end
 
   luckyphil.export_user_history
