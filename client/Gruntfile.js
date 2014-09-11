@@ -54,6 +54,10 @@ module.exports = function (grunt) {
             test: {
                 files: ['<%= yeoman.app %>/scripts/{,*/}*.js', 'test/spec/**/*.js'],
                 tasks: ['test:true']
+            },
+            styles: {
+                files: ['<%= yeoman.app %>/sass/{,*/}*.scss'],
+                tasks: ['sass:dev']
             }
         },
         connect: {
@@ -223,6 +227,24 @@ module.exports = function (grunt) {
                     ]
                 }
             }
+        },
+        sass: {
+          dist: {
+            options: {
+              style: 'compressed'
+            },
+            files: {
+              '<%= yeoman.dist %>/styles/main.css': '<%= yeoman.app %>/sass/main.scss'
+            }
+          },
+          dev: {
+            options: {
+              style: 'expanded'
+            },
+            files: {
+              '<%= yeoman.app %>/styles/main.css': '<%= yeoman.app %>/sass/main.scss'
+            }
+          },
         }
     });
 
@@ -291,6 +313,7 @@ module.exports = function (grunt) {
         'cssmin',
         'uglify',
         'copy',
+        'sass:dist', // compile sass to distribution directory
         'rev',
         'usemin'
     ]);
