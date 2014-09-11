@@ -26,6 +26,9 @@ class Phil
   LUNCH = [13,17]
   DINNER = [17,22] # And close at 10pm
 
+  # Driver Speed in mph
+  SPEED = 40
+
   attr_accessor :today, :current_location, :current_address, :last_meal, :output_file, :last_driver, :visited_chipotles, :trip_history
 
   def initialize
@@ -87,7 +90,7 @@ class Phil
 
     trip[:distance] = haversine trip[:start_location][:latitude], trip[:start_location][:longitude], trip[:end_location][:latitude], trip[:end_location][:longitude]
     # Convert times to Unix times
-    # trip[:end_time] = "".to_time.utc.to_i
+    trip[:end_time] = (trip[:start_time] + (trip[:distance]/(SPEED/60.0)).minutes).to_time.utc.to_i
     trip[:request_time] = trip[:request_time].to_time.utc.to_i
     trip[:start_time] = trip[:start_time].to_time.utc.to_i
 
@@ -149,7 +152,7 @@ def generate_awesome_month start_date, output_file
     end
 
     luckyphil.go_to dinner
-    
+
     # luckyphil.go_home
 
   end

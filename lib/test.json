@@ -6,254 +6,268 @@
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 7655,
+      "product_id": 40,
       "start_location": {
         "address": "176 Broadway, New York, NY, United States",
         "latitude": 40.710058,
         "longitude": -74.00966
       },
-      "request_time": 1406915008,
-      "start_time": 1406915188,
+      "request_time": 1406912933,
+      "start_time": 1406913113,
       "end_location": {
-        "address": "101 Rte 22, Springfield Township, NJ, United States",
-        "latitude": 40.687118,
-        "longitude": -74.315749
+        "address": "620 9th Ave, New York, NY, United States",
+        "latitude": 40.759696,
+        "longitude": -73.99169
       },
-      "distance": 16.113036301883234
+      "distance": 3.5565736762559723,
+      "end_time": 1406913433
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 6549,
+      "product_id": 2155,
       "start_location": {
-        "address": "101 Rte 22, Springfield Township, NJ, United States",
-        "latitude": 40.687118,
-        "longitude": -74.315749
+        "address": "620 9th Ave, New York, NY, United States",
+        "latitude": 40.759696,
+        "longitude": -73.99169
       },
-      "request_time": 1406926514,
-      "start_time": 1406926694,
+      "request_time": 1406918173,
+      "start_time": 1406918653,
       "end_location": {
-        "address": "149 8th Ave, New York, NY, United States",
-        "latitude": 40.742,
-        "longitude": -74.001117
+        "address": "234 5th Ave, New York, NY, United States",
+        "latitude": 40.744319,
+        "longitude": -73.987896
       },
-      "distance": 16.909187473007957
+      "distance": 1.080913876659088,
+      "end_time": 1406918750
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 5091,
+      "product_id": 5236,
       "start_location": {
-        "address": "149 8th Ave, New York, NY, United States",
-        "latitude": 40.742,
-        "longitude": -74.001117
+        "address": "234 5th Ave, New York, NY, United States",
+        "latitude": 40.744319,
+        "longitude": -73.987896
       },
-      "request_time": 1406947291,
-      "start_time": 1406947651,
-      "end_location": {
-        "address": "405 Avenue of the Americas, New York, NY, United States",
-        "latitude": 40.733577,
-        "longitude": -74.000004
-      },
-      "distance": 0.584918814208068
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 5244,
-      "start_location": {
-        "address": "405 Avenue of the Americas, New York, NY, United States",
-        "latitude": 40.733577,
-        "longitude": -74.000004
-      },
-      "request_time": 1406997144,
-      "start_time": 1406997624,
-      "end_location": {
-        "address": "101 Rte 22, Springfield Township, NJ, United States",
-        "latitude": 40.687118,
-        "longitude": -74.315749
-      },
-      "distance": 16.846491839889197
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 3842,
-      "start_location": {
-        "address": "101 Rte 22, Springfield Township, NJ, United States",
-        "latitude": 40.687118,
-        "longitude": -74.315749
-      },
-      "request_time": 1407013141,
-      "start_time": 1407013321,
-      "end_location": {
-        "address": "281 Broadway, New York, NY, United States",
-        "latitude": 40.714537,
-        "longitude": -74.006312
-      },
-      "distance": 16.32006864399567
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 898,
-      "start_location": {
-        "address": "281 Broadway, New York, NY, United States",
-        "latitude": 40.714537,
-        "longitude": -74.006312
-      },
-      "request_time": 1407031504,
-      "start_time": 1407031924,
-      "end_location": {
-        "address": "149 8th Ave, New York, NY, United States",
-        "latitude": 40.742,
-        "longitude": -74.001117
-      },
-      "distance": 1.9170253562760486
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 5099,
-      "start_location": {
-        "address": "149 8th Ave, New York, NY, United States",
-        "latitude": 40.742,
-        "longitude": -74.001117
-      },
-      "request_time": 1407087292,
-      "start_time": 1407087592,
-      "end_location": {
-        "address": "283 7th Ave, New York, NY, United States",
-        "latitude": 40.746044,
-        "longitude": -73.993992
-      },
-      "distance": 0.4660569645315702
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 3129,
-      "start_location": {
-        "address": "283 7th Ave, New York, NY, United States",
-        "latitude": 40.746044,
-        "longitude": -73.993992
-      },
-      "request_time": 1407097220,
-      "start_time": 1407097460,
+      "request_time": 1406942178,
+      "start_time": 1406942598,
       "end_location": {
         "address": "28 W 40th St, New York, NY, United States",
         "latitude": 40.752743,
         "longitude": -73.983412
       },
-      "distance": 0.7217923261942369
+      "distance": 0.6276227668091393,
+      "end_time": 1406942654
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 3914,
+      "product_id": 1379,
       "start_location": {
         "address": "28 W 40th St, New York, NY, United States",
         "latitude": 40.752743,
         "longitude": -73.983412
       },
-      "request_time": 1407103520,
-      "start_time": 1407103880,
+      "request_time": 1406999995,
+      "start_time": 1407000475,
       "end_location": {
-        "address": "1497 3rd Ave, New York, NY, United States",
-        "latitude": 40.777698,
-        "longitude": -73.954524
+        "address": "81 New Jersey 4, Paramus, NJ, United States",
+        "latitude": 40.919278,
+        "longitude": -74.064846
       },
-      "distance": 2.29323393319506
+      "distance": 12.269423055851535,
+      "end_time": 1407001579
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 5057,
+      "product_id": 4311,
       "start_location": {
-        "address": "1497 3rd Ave, New York, NY, United States",
-        "latitude": 40.777698,
-        "longitude": -73.954524
+        "address": "81 New Jersey 4, Paramus, NJ, United States",
+        "latitude": 40.919278,
+        "longitude": -74.064846
       },
-      "request_time": 1407168309,
-      "start_time": 1407168609,
+      "request_time": 1407013745,
+      "start_time": 1407013985,
       "end_location": {
-        "address": "125 E 23rd St, New York, NY, United States",
-        "latitude": 40.739978,
-        "longitude": -73.985069
+        "address": "229 Washington St, Hoboken, NJ, United States",
+        "latitude": 40.739596,
+        "longitude": -74.029981
       },
-      "distance": 3.0576031772514334
+      "distance": 12.548694547255732,
+      "end_time": 1407015114
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 2105,
+      "product_id": 5623,
       "start_location": {
-        "address": "125 E 23rd St, New York, NY, United States",
-        "latitude": 40.739978,
-        "longitude": -73.985069
+        "address": "229 Washington St, Hoboken, NJ, United States",
+        "latitude": 40.739596,
+        "longitude": -74.029981
       },
-      "request_time": 1407179623,
-      "start_time": 1407179923,
+      "request_time": 1407020940,
+      "start_time": 1407021120,
       "end_location": {
-        "address": "604 2nd Ave, New York, NY, United States",
-        "latitude": 40.744214,
-        "longitude": -73.975843
+        "address": "70-30 Austin St, Forest Hills, NY, United States",
+        "latitude": 40.720336,
+        "longitude": -73.845937
       },
-      "distance": 0.5647667653805384
+      "distance": 9.728307971122558,
+      "end_time": 1407021996
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 9705,
+      "product_id": 2978,
       "start_location": {
-        "address": "604 2nd Ave, New York, NY, United States",
-        "latitude": 40.744214,
-        "longitude": -73.975843
+        "address": "70-30 Austin St, Forest Hills, NY, United States",
+        "latitude": 40.720336,
+        "longitude": -73.845937
       },
-      "request_time": 1407199594,
-      "start_time": 1407199954,
+      "request_time": 1407085624,
+      "start_time": 1407085984,
       "end_location": {
-        "address": "235 W 56th St, New York, NY, United States",
-        "latitude": 40.765913,
-        "longitude": -73.982616
+        "address": "77-4 Roosevelt Ave, Jackson Heights, NY, United States",
+        "latitude": 40.747033,
+        "longitude": -73.888277
       },
-      "distance": 1.5406896416672682
+      "distance": 2.883994095431543,
+      "end_time": 1407086244
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 2231,
+      "product_id": 9175,
       "start_location": {
-        "address": "235 W 56th St, New York, NY, United States",
-        "latitude": 40.765913,
-        "longitude": -73.982616
+        "address": "77-4 Roosevelt Ave, Jackson Heights, NY, United States",
+        "latitude": 40.747033,
+        "longitude": -73.888277
       },
-      "request_time": 1407257590,
-      "start_time": 1407258070,
+      "request_time": 1407101316,
+      "start_time": 1407101796,
       "end_location": {
-        "address": "405 Avenue of the Americas, New York, NY, United States",
-        "latitude": 40.733577,
-        "longitude": -74.000004
+        "address": "1153 3rd Ave, New York, NY, United States",
+        "latitude": 40.766622,
+        "longitude": -73.962541
       },
-      "distance": 2.412618171713206
+      "distance": 4.115945667169903,
+      "end_time": 1407102166
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 9462,
+      "product_id": 9222,
       "start_location": {
-        "address": "405 Avenue of the Americas, New York, NY, United States",
-        "latitude": 40.733577,
-        "longitude": -74.000004
+        "address": "1153 3rd Ave, New York, NY, United States",
+        "latitude": 40.766622,
+        "longitude": -73.962541
       },
-      "request_time": 1407263795,
-      "start_time": 1407264275,
+      "request_time": 1407106624,
+      "start_time": 1407107044,
       "end_location": {
-        "address": "304 W 34th St, New York, NY, United States",
-        "latitude": 40.752369,
-        "longitude": -73.994332
+        "address": "81 New Jersey 4, Paramus, NJ, United States",
+        "latitude": 40.919278,
+        "longitude": -74.064846
       },
-      "distance": 1.332001065969823
+      "distance": 11.826332090932192,
+      "end_time": 1407108108
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 507,
+      "start_location": {
+        "address": "81 New Jersey 4, Paramus, NJ, United States",
+        "latitude": 40.919278,
+        "longitude": -74.064846
+      },
+      "request_time": 1407173290,
+      "start_time": 1407173710,
+      "end_location": {
+        "address": "625 Broadway, New York, NY, United States",
+        "latitude": 40.726037,
+        "longitude": -73.996478
+      },
+      "distance": 13.82275527640418,
+      "end_time": 1407174954
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 6402,
+      "start_location": {
+        "address": "625 Broadway, New York, NY, United States",
+        "latitude": 40.726037,
+        "longitude": -73.996478
+      },
+      "request_time": 1407177710,
+      "start_time": 1407178010,
+      "end_location": {
+        "address": "620 9th Ave, New York, NY, United States",
+        "latitude": 40.759696,
+        "longitude": -73.99169
+      },
+      "distance": 2.3392240528737247,
+      "end_time": 1407178221
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 1777,
+      "start_location": {
+        "address": "620 9th Ave, New York, NY, United States",
+        "latitude": 40.759696,
+        "longitude": -73.99169
+      },
+      "request_time": 1407193148,
+      "start_time": 1407193448,
+      "end_location": {
+        "address": "1379 Avenue of the Americas, New York, NY, United States",
+        "latitude": 40.763626,
+        "longitude": -73.978118
+      },
+      "distance": 0.7604521221006892,
+      "end_time": 1407193516
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 8018,
+      "start_location": {
+        "address": "1379 Avenue of the Americas, New York, NY, United States",
+        "latitude": 40.763626,
+        "longitude": -73.978118
+      },
+      "request_time": 1407260216,
+      "start_time": 1407260636,
+      "end_location": {
+        "address": "380 New Jersey 3, Clifton, NJ, United States",
+        "latitude": 40.830254,
+        "longitude": -74.137729
+      },
+      "distance": 9.534276055355136,
+      "end_time": 1407261494
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 7695,
+      "start_location": {
+        "address": "380 New Jersey 3, Clifton, NJ, United States",
+        "latitude": 40.830254,
+        "longitude": -74.137729
+      },
+      "request_time": 1407272444,
+      "start_time": 1407272804,
+      "end_location": {
+        "address": "269 Amsterdam Ave, New York City, NY, United States",
+        "latitude": 40.778943,
+        "longitude": -73.981141
+      },
+      "distance": 8.924489968087952,
+      "end_time": 1407273607
     }
   ]
 }
