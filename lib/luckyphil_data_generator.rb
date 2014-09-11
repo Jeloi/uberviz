@@ -3,35 +3,10 @@ require 'sequel'
 require "date"
 require 'pp'
 require "active_support/core_ext"
+require './helpers'
 
 DB = Sequel.sqlite('luckyphil.db')
 START_DATE = DateTime.new(2014,8,1,0,0,0,'-5')
-
-# Helper Module
-module Helpers
-  # Converts miles to lat/long degrees. Assumes the earth is a sphere :O
-  def miles_to_degrees miles
-    return miles 
-  end
-
-  # Returns a random, continuous number between two numbers in a pair array
-  def rand_between pair_array
-    num1, num2 = pair_array[0], pair_array[1]
-    if num1 <= num2
-      small, big = num1, num2
-    else
-      big, small = num1, num2
-    end
-    range = big - small
-    return small + rand * range
-  end
-
-  def append_to_file hash, output_file
-    File.open(output_file, "a") do |file|
-      file.puts JSON.pretty_generate(hash)
-    end
-  end
-end
 
 # Phil's existential state
 class Phil
@@ -137,7 +112,7 @@ class Phil
 
   end
 
-  # Export the Phil's history Json in output_file, mirroring mirroring the Uber API's history endpoint schema
+  # Export Phil's history to Json in the output_file, mirroring the Uber API's history endpoint schema
   def export_user_history
     output = {
       offset: 0,
