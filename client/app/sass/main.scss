@@ -1,8 +1,22 @@
-body {
-    background: #fff;
-}
+/**
+ * Main SCSS File using InuitCSS
+ * - Include variable overrides before @importing fiels
+ */
 
-.hero-unit {
-    margin: 50px auto 0 auto;
-    width: 300px;
-}
+
+// Settings
+@import "../bower_components/inuit-defaults/settings.defaults";
+@import "settings.variables";
+
+// Tools
+@import "../bower_components/inuit-functions/tools.functions";
+@import "../bower_components/inuit-mixins/tools.mixins";
+@import "../bower_components/inuit-responsive-tools/tools.responsive";
+
+// Generic
+@import "../bower_components/inuit-normalize/generic.normalize";
+@import "../bower_components/inuit-box-sizing/generic.box-sizing";
+
+// Base
+@import "base.page";
+@import "../bower_components/inuit-page/base.page";
