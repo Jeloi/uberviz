@@ -13,7 +13,7 @@ window.Uberviz = {
 };
 
 $(document).ready(function () {
-    'use strict';
+    // 'use strict';
     Uberviz.init();
 
     // var history = new Uberviz.Collections.TripHistory();
@@ -26,12 +26,9 @@ $(document).ready(function () {
 
     // console.log(demoHistory);
     console.log(demoHistory["history"]);
-    var history = new Uberviz.Collections.TripHistory(demoHistory["history"]);
+    tripHistory = new Uberviz.Collections.TripHistory(demoHistory["history"]);
 
-    console.log(history.length);
-
-    // console.log(history);
-
+    console.log(tripHistory.models[0].attributes);
 
 
 

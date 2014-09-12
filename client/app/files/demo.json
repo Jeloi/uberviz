@@ -1,565 +1,273 @@
 demoHistory = {
   "offset": 0,
   "limit": 9999,
-  "count": 31,
+  "count": 14,
   "history": [
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 4743,
+      "product_id": 40,
       "start_location": {
         "address": "176 Broadway, New York, NY, United States",
         "latitude": 40.710058,
         "longitude": -74.00966
       },
-      "request_time": 1406909726,
-      "start_time": 1406910086,
+      "request_time": 1406912933,
+      "start_time": 1406913113,
       "end_location": {
-        "address": "101 Rte 22, Springfield Township, NJ, United States",
-        "latitude": 40.687118,
-        "longitude": -74.315749
+        "address": "620 9th Ave, New York, NY, United States",
+        "latitude": 40.759696,
+        "longitude": -73.99169
       },
-      "distance": ""
+      "distance": 3.5565736762559723,
+      "end_time": 1406913433
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 1561,
+      "product_id": 2155,
       "start_location": {
-        "address": "101 Rte 22, Springfield Township, NJ, United States",
-        "latitude": 40.687118,
-        "longitude": -74.315749
+        "address": "620 9th Ave, New York, NY, United States",
+        "latitude": 40.759696,
+        "longitude": -73.99169
       },
-      "request_time": 1407001061,
-      "start_time": 1407001361,
-      "end_location": {
-        "address": "77-4 Roosevelt Ave, Jackson Heights, NY, United States",
-        "latitude": 40.747033,
-        "longitude": -73.888277
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 6916,
-      "start_location": {
-        "address": "77-4 Roosevelt Ave, Jackson Heights, NY, United States",
-        "latitude": 40.747033,
-        "longitude": -73.888277
-      },
-      "request_time": 1407082370,
-      "start_time": 1407082550,
-      "end_location": {
-        "address": "40 New Jersey 17, East Rutherford, NJ, United States",
-        "latitude": 40.831241,
-        "longitude": -74.089042
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 2535,
-      "start_location": {
-        "address": "40 New Jersey 17, East Rutherford, NJ, United States",
-        "latitude": 40.831241,
-        "longitude": -74.089042
-      },
-      "request_time": 1407175128,
-      "start_time": 1407175608,
-      "end_location": {
-        "address": "55 E 8th St, New York, NY, United States",
-        "latitude": 40.730982,
-        "longitude": -73.993413
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 7361,
-      "start_location": {
-        "address": "55 E 8th St, New York, NY, United States",
-        "latitude": 40.730982,
-        "longitude": -73.993413
-      },
-      "request_time": 1407254430,
-      "start_time": 1407254670,
-      "end_location": {
-        "address": "117 E 14th St, Manhattan, NY, United States",
-        "latitude": 40.734023,
-        "longitude": -73.988864
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 5357,
-      "start_location": {
-        "address": "117 E 14th St, Manhattan, NY, United States",
-        "latitude": 40.734023,
-        "longitude": -73.988864
-      },
-      "request_time": 1407343887,
-      "start_time": 1407344067,
-      "end_location": {
-        "address": "274 Madison Ave, New York, NY, United States",
-        "latitude": 40.751257,
-        "longitude": -73.98061
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 9577,
-      "start_location": {
-        "address": "274 Madison Ave, New York, NY, United States",
-        "latitude": 40.751257,
-        "longitude": -73.98061
-      },
-      "request_time": 1407432808,
-      "start_time": 1407433288,
-      "end_location": {
-        "address": "700 Plaza Dr, Secaucus, NJ, United States",
-        "latitude": 40.787552,
-        "longitude": -74.045813
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 3919,
-      "start_location": {
-        "address": "700 Plaza Dr, Secaucus, NJ, United States",
-        "latitude": 40.787552,
-        "longitude": -74.045813
-      },
-      "request_time": 1407517868,
-      "start_time": 1407518108,
-      "end_location": {
-        "address": "2843 Broadway, New York, NY, United States",
-        "latitude": 40.804596,
-        "longitude": -73.966844
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 4898,
-      "start_location": {
-        "address": "2843 Broadway, New York, NY, United States",
-        "latitude": 40.804596,
-        "longitude": -73.966844
-      },
-      "request_time": 1407602342,
-      "start_time": 1407602642,
-      "end_location": {
-        "address": "1288 1st Ave, New York, NY, United States",
-        "latitude": 40.766077,
-        "longitude": -73.957234
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 6042,
-      "start_location": {
-        "address": "1288 1st Ave, New York, NY, United States",
-        "latitude": 40.766077,
-        "longitude": -73.957234
-      },
-      "request_time": 1407688498,
-      "start_time": 1407688858,
-      "end_location": {
-        "address": "101 Fulton St #111, New York, NY, United States",
-        "latitude": 40.709742,
-        "longitude": -74.006444
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 482,
-      "start_location": {
-        "address": "101 Fulton St #111, New York, NY, United States",
-        "latitude": 40.709742,
-        "longitude": -74.006444
-      },
-      "request_time": 1407772838,
-      "start_time": 1407773078,
-      "end_location": {
-        "address": "25 W 45th St, New York, NY, United States",
-        "latitude": 40.756097,
-        "longitude": -73.980767
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 5951,
-      "start_location": {
-        "address": "25 W 45th St, New York, NY, United States",
-        "latitude": 40.756097,
-        "longitude": -73.980767
-      },
-      "request_time": 1407863811,
-      "start_time": 1407864111,
-      "end_location": {
-        "address": "25 W 45th St, New York, NY, United States",
-        "latitude": 40.756097,
-        "longitude": -73.980767
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 7214,
-      "start_location": {
-        "address": "25 W 45th St, New York, NY, United States",
-        "latitude": 40.756097,
-        "longitude": -73.980767
-      },
-      "request_time": 1407946201,
-      "start_time": 1407946381,
-      "end_location": {
-        "address": "464 Park Ave S, New York, NY, United States",
-        "latitude": 40.745439,
-        "longitude": -73.982834
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 7569,
-      "start_location": {
-        "address": "464 Park Ave S, New York, NY, United States",
-        "latitude": 40.745439,
-        "longitude": -73.982834
-      },
-      "request_time": 1408037600,
-      "start_time": 1408038020,
-      "end_location": {
-        "address": "The Promenade, Edgewater, NJ, United States",
-        "latitude": 40.806745,
-        "longitude": -73.990133
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 7102,
-      "start_location": {
-        "address": "The Promenade, Edgewater, NJ, United States",
-        "latitude": 40.806745,
-        "longitude": -73.990133
-      },
-      "request_time": 1408118795,
-      "start_time": 1408119275,
-      "end_location": {
-        "address": "71 Spring St, New York, NY, United States",
-        "latitude": 40.722533,
-        "longitude": -73.997475
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 1441,
-      "start_location": {
-        "address": "71 Spring St, New York, NY, United States",
-        "latitude": 40.722533,
-        "longitude": -73.997475
-      },
-      "request_time": 1408209616,
-      "start_time": 1408209856,
-      "end_location": {
-        "address": "101 Rte 22, Springfield Township, NJ, United States",
-        "latitude": 40.687118,
-        "longitude": -74.315749
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 7497,
-      "start_location": {
-        "address": "101 Rte 22, Springfield Township, NJ, United States",
-        "latitude": 40.687118,
-        "longitude": -74.315749
-      },
-      "request_time": 1408291236,
-      "start_time": 1408291656,
-      "end_location": {
-        "address": "The Promenade, Edgewater, NJ, United States",
-        "latitude": 40.806745,
-        "longitude": -73.990133
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 316,
-      "start_location": {
-        "address": "The Promenade, Edgewater, NJ, United States",
-        "latitude": 40.806745,
-        "longitude": -73.990133
-      },
-      "request_time": 1408379554,
-      "start_time": 1408379794,
-      "end_location": {
-        "address": "24 E 12th St, New York, NY, United States",
-        "latitude": 40.734056,
-        "longitude": -73.993146
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 8760,
-      "start_location": {
-        "address": "24 E 12th St, New York, NY, United States",
-        "latitude": 40.734056,
-        "longitude": -73.993146
-      },
-      "request_time": 1408468296,
-      "start_time": 1408468716,
+      "request_time": 1406918173,
+      "start_time": 1406918653,
       "end_location": {
         "address": "234 5th Ave, New York, NY, United States",
         "latitude": 40.744319,
         "longitude": -73.987896
       },
-      "distance": ""
+      "distance": 1.080913876659088,
+      "end_time": 1406918750
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 8977,
+      "product_id": 5236,
       "start_location": {
         "address": "234 5th Ave, New York, NY, United States",
         "latitude": 40.744319,
         "longitude": -73.987896
       },
-      "request_time": 1408554246,
-      "start_time": 1408554486,
+      "request_time": 1406942178,
+      "start_time": 1406942598,
       "end_location": {
-        "address": "2843 Broadway, New York, NY, United States",
-        "latitude": 40.804596,
-        "longitude": -73.966844
+        "address": "28 W 40th St, New York, NY, United States",
+        "latitude": 40.752743,
+        "longitude": -73.983412
       },
-      "distance": ""
+      "distance": 0.6276227668091393,
+      "end_time": 1406942654
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 6412,
+      "product_id": 1379,
       "start_location": {
-        "address": "2843 Broadway, New York, NY, United States",
-        "latitude": 40.804596,
-        "longitude": -73.966844
+        "address": "28 W 40th St, New York, NY, United States",
+        "latitude": 40.752743,
+        "longitude": -73.983412
       },
-      "request_time": 1408637645,
-      "start_time": 1408637945,
-      "end_location": {
-        "address": "70-30 Austin St, Forest Hills, NY, United States",
-        "latitude": 40.720336,
-        "longitude": -73.845937
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 4643,
-      "start_location": {
-        "address": "70-30 Austin St, Forest Hills, NY, United States",
-        "latitude": 40.720336,
-        "longitude": -73.845937
-      },
-      "request_time": 1408723508,
-      "start_time": 1408723988,
-      "end_location": {
-        "address": "304 W 34th St, New York, NY, United States",
-        "latitude": 40.752369,
-        "longitude": -73.994332
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 6500,
-      "start_location": {
-        "address": "304 W 34th St, New York, NY, United States",
-        "latitude": 40.752369,
-        "longitude": -73.994332
-      },
-      "request_time": 1408813146,
-      "start_time": 1408813326,
-      "end_location": {
-        "address": "269 Amsterdam Ave, New York City, NY, United States",
-        "latitude": 40.778943,
-        "longitude": -73.981141
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 8324,
-      "start_location": {
-        "address": "269 Amsterdam Ave, New York City, NY, United States",
-        "latitude": 40.778943,
-        "longitude": -73.981141
-      },
-      "request_time": 1408902866,
-      "start_time": 1408903346,
-      "end_location": {
-        "address": "2843 Broadway, New York, NY, United States",
-        "latitude": 40.804596,
-        "longitude": -73.966844
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 6325,
-      "start_location": {
-        "address": "2843 Broadway, New York, NY, United States",
-        "latitude": 40.804596,
-        "longitude": -73.966844
-      },
-      "request_time": 1408984527,
-      "start_time": 1408984707,
-      "end_location": {
-        "address": "464 Park Ave S, New York, NY, United States",
-        "latitude": 40.745439,
-        "longitude": -73.982834
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 7718,
-      "start_location": {
-        "address": "464 Park Ave S, New York, NY, United States",
-        "latitude": 40.745439,
-        "longitude": -73.982834
-      },
-      "request_time": 1409073909,
-      "start_time": 1409074209,
-      "end_location": {
-        "address": "1497 3rd Ave, New York, NY, United States",
-        "latitude": 40.777698,
-        "longitude": -73.954524
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 244,
-      "start_location": {
-        "address": "1497 3rd Ave, New York, NY, United States",
-        "latitude": 40.777698,
-        "longitude": -73.954524
-      },
-      "request_time": 1409155229,
-      "start_time": 1409155589,
-      "end_location": {
-        "address": "275 Greenwich St, New York, NY, United States",
-        "latitude": 40.715077,
-        "longitude": -74.010995
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 2955,
-      "start_location": {
-        "address": "275 Greenwich St, New York, NY, United States",
-        "latitude": 40.715077,
-        "longitude": -74.010995
-      },
-      "request_time": 1409246638,
-      "start_time": 1409246878,
-      "end_location": {
-        "address": "2843 Broadway, New York, NY, United States",
-        "latitude": 40.804596,
-        "longitude": -73.966844
-      },
-      "distance": ""
-    },
-    {
-      "uuid": "phils-id",
-      "status": "complete",
-      "product_id": 1933,
-      "start_location": {
-        "address": "2843 Broadway, New York, NY, United States",
-        "latitude": 40.804596,
-        "longitude": -73.966844
-      },
-      "request_time": 1409330071,
-      "start_time": 1409330251,
+      "request_time": 1406999995,
+      "start_time": 1407000475,
       "end_location": {
         "address": "81 New Jersey 4, Paramus, NJ, United States",
         "latitude": 40.919278,
         "longitude": -74.064846
       },
-      "distance": ""
+      "distance": 12.269423055851535,
+      "end_time": 1407001579
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 2473,
+      "product_id": 4311,
       "start_location": {
         "address": "81 New Jersey 4, Paramus, NJ, United States",
         "latitude": 40.919278,
         "longitude": -74.064846
       },
-      "request_time": 1409419500,
-      "start_time": 1409419800,
+      "request_time": 1407013745,
+      "start_time": 1407013985,
       "end_location": {
-        "address": "234 5th Ave, New York, NY, United States",
-        "latitude": 40.744319,
-        "longitude": -73.987896
+        "address": "229 Washington St, Hoboken, NJ, United States",
+        "latitude": 40.739596,
+        "longitude": -74.029981
       },
-      "distance": ""
+      "distance": 12.548694547255732,
+      "end_time": 1407015114
     },
     {
       "uuid": "phils-id",
       "status": "complete",
-      "product_id": 3756,
+      "product_id": 5623,
       "start_location": {
-        "address": "234 5th Ave, New York, NY, United States",
-        "latitude": 40.744319,
-        "longitude": -73.987896
+        "address": "229 Washington St, Hoboken, NJ, United States",
+        "latitude": 40.739596,
+        "longitude": -74.029981
       },
-      "request_time": 1409506160,
-      "start_time": 1409506640,
+      "request_time": 1407020940,
+      "start_time": 1407021120,
       "end_location": {
-        "address": "101 Fulton St #111, New York, NY, United States",
-        "latitude": 40.709742,
-        "longitude": -74.006444
+        "address": "70-30 Austin St, Forest Hills, NY, United States",
+        "latitude": 40.720336,
+        "longitude": -73.845937
       },
-      "distance": ""
+      "distance": 9.728307971122558,
+      "end_time": 1407021996
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 2978,
+      "start_location": {
+        "address": "70-30 Austin St, Forest Hills, NY, United States",
+        "latitude": 40.720336,
+        "longitude": -73.845937
+      },
+      "request_time": 1407085624,
+      "start_time": 1407085984,
+      "end_location": {
+        "address": "77-4 Roosevelt Ave, Jackson Heights, NY, United States",
+        "latitude": 40.747033,
+        "longitude": -73.888277
+      },
+      "distance": 2.883994095431543,
+      "end_time": 1407086244
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 9175,
+      "start_location": {
+        "address": "77-4 Roosevelt Ave, Jackson Heights, NY, United States",
+        "latitude": 40.747033,
+        "longitude": -73.888277
+      },
+      "request_time": 1407101316,
+      "start_time": 1407101796,
+      "end_location": {
+        "address": "1153 3rd Ave, New York, NY, United States",
+        "latitude": 40.766622,
+        "longitude": -73.962541
+      },
+      "distance": 4.115945667169903,
+      "end_time": 1407102166
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 9222,
+      "start_location": {
+        "address": "1153 3rd Ave, New York, NY, United States",
+        "latitude": 40.766622,
+        "longitude": -73.962541
+      },
+      "request_time": 1407106624,
+      "start_time": 1407107044,
+      "end_location": {
+        "address": "81 New Jersey 4, Paramus, NJ, United States",
+        "latitude": 40.919278,
+        "longitude": -74.064846
+      },
+      "distance": 11.826332090932192,
+      "end_time": 1407108108
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 507,
+      "start_location": {
+        "address": "81 New Jersey 4, Paramus, NJ, United States",
+        "latitude": 40.919278,
+        "longitude": -74.064846
+      },
+      "request_time": 1407173290,
+      "start_time": 1407173710,
+      "end_location": {
+        "address": "625 Broadway, New York, NY, United States",
+        "latitude": 40.726037,
+        "longitude": -73.996478
+      },
+      "distance": 13.82275527640418,
+      "end_time": 1407174954
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 6402,
+      "start_location": {
+        "address": "625 Broadway, New York, NY, United States",
+        "latitude": 40.726037,
+        "longitude": -73.996478
+      },
+      "request_time": 1407177710,
+      "start_time": 1407178010,
+      "end_location": {
+        "address": "620 9th Ave, New York, NY, United States",
+        "latitude": 40.759696,
+        "longitude": -73.99169
+      },
+      "distance": 2.3392240528737247,
+      "end_time": 1407178221
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 1777,
+      "start_location": {
+        "address": "620 9th Ave, New York, NY, United States",
+        "latitude": 40.759696,
+        "longitude": -73.99169
+      },
+      "request_time": 1407193148,
+      "start_time": 1407193448,
+      "end_location": {
+        "address": "1379 Avenue of the Americas, New York, NY, United States",
+        "latitude": 40.763626,
+        "longitude": -73.978118
+      },
+      "distance": 0.7604521221006892,
+      "end_time": 1407193516
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 8018,
+      "start_location": {
+        "address": "1379 Avenue of the Americas, New York, NY, United States",
+        "latitude": 40.763626,
+        "longitude": -73.978118
+      },
+      "request_time": 1407260216,
+      "start_time": 1407260636,
+      "end_location": {
+        "address": "380 New Jersey 3, Clifton, NJ, United States",
+        "latitude": 40.830254,
+        "longitude": -74.137729
+      },
+      "distance": 9.534276055355136,
+      "end_time": 1407261494
+    },
+    {
+      "uuid": "phils-id",
+      "status": "complete",
+      "product_id": 7695,
+      "start_location": {
+        "address": "380 New Jersey 3, Clifton, NJ, United States",
+        "latitude": 40.830254,
+        "longitude": -74.137729
+      },
+      "request_time": 1407272444,
+      "start_time": 1407272804,
+      "end_location": {
+        "address": "269 Amsterdam Ave, New York City, NY, United States",
+        "latitude": 40.778943,
+        "longitude": -73.981141
+      },
+      "distance": 8.924489968087952,
+      "end_time": 1407273607
     }
   ]
 }
