@@ -1,7 +1,9 @@
 {
-  "name": "client",
+  "name": "Uberviz",
   "version": "0.0.0",
-  "dependencies": {},
+  "dependencies": {
+    "grunt-contrib-sass": "^0.8.1"
+  },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-copy": "~0.5.0",
@@ -22,8 +24,7 @@
     "load-grunt-tasks": "~0.3.0",
     "connect-livereload": "~0.3.2",
     "time-grunt": "~0.2.8",
-    "jshint-stylish": "~0.1.5",
-    "grunt-contrib-sass": "^0.8.1"
+    "jshint-stylish": "~0.1.5"
   },
   "engines": {
     "node": ">=0.10.0"

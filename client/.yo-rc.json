@@ -1,7 +1,7 @@
 {
   "generator-backbone": {
     "appPath": "app",
-    "appName": "UberApiPlay",
+    "appName": "Uberviz",
     "testFramework": "mocha",
     "templateFramework": "lodash",
     "coffee": false,
