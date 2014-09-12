@@ -10,6 +10,10 @@ Uberviz.Models = Uberviz.Models || {};
         url: '',
 
         initialize: function() {
+            this.on('selected', function(msg) {
+                alert("Trip #"+this.id)
+                /* Act on the event */
+            });
         },
 
         defaults: {
