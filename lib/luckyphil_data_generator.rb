@@ -148,7 +148,7 @@ def generate_awesome_month start_date, output_file
     # # If Phil is tuesday livin' he goes home for tacos
     if luckyphil.is_tuesday_living?
       # luckyphil.go_home
-      break # That's a wrap on the day
+      next # That's a wrap on the day
     end
 
     luckyphil.go_to dinner
