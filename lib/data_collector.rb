@@ -14,7 +14,7 @@ DB = Sequel.sqlite('luckyphil.db')
 # --- Google API Client ---
 def collect_chipotles
   
-  @client = GooglePlaces::Client.new(@configs["google"]["api_key"])
+  @client = GooglePlaces::Client.new(@configs["google"]["server_api_key"])
 
   # Recreate the database table
   if !DB.table_exists?(:chipotles)
