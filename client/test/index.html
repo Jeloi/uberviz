@@ -8,6 +8,9 @@
 <body>
     <div id="mocha"></div>
     <script src="bower_components/mocha/mocha.js"></script>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
     <script>mocha.setup('bdd')</script>
     <script src="bower_components/chai/chai.js"></script>
     <script>
@@ -17,11 +20,12 @@
     </script>
 
     <!-- include source files here... -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/collections/TripHistory.js"></script>
 
-    <script src="models/trip.spec.js.js"></script>
-    <script src="collections/TripHistory.spec.js.js"></script>
     <!-- include spec files here... -->
     <script src="spec/test.js"></script>
+    <script src="collections/TripHistory.spec.js"></script>
 
     <script>mocha.run()</script>
 </body>

@@ -7,4 +7,12 @@ describe('Trip Model', function () {
         this.TripModel = new Uberviz.Models.Trip();
     });
 
+    it('do things', function() {
+    	expect(1).to.equal(1);
+    });
+
+    it('should make things work ', function() {
+    	expect(1).to.equal(2);
+    });
+
 });

@@ -13,25 +13,34 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
+        <style type="text/css">
+          html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
+        </style>
+
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+          <div id="map-canvas"></div>
 
-        <div class="hero-unit">
-          <h1>&apos;Allo, &apos;Allo!</h1>
-          <p>You now have</p>
-          <ul>
-            <li>HTML5 Boilerplate</li>
-            <li>jQuery</li>
-            <li>Backbone.js</li>
-            <li>Underscore.js</li>
-            <li>Modernizr</li>
+          <script type="text/javascript"
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiPGKRR89xKbbBHIWPD6wUFV40nC2FwSs">
+          </script>          
 
-          </ul>
-        </div>
+          <script type="text/javascript">
+                function initialize() {
+                  var mapOptions = {
+                    center: { lat: -34.397, lng: 150.644},
+                    zoom: 8,
+                    styles: [{'featureType':'water','stylers':[{'color':'#021019'}]},{'featureType':'landscape','stylers':[{'color':'#08304b'}]},{'featureType':'poi','elementType':'geometry','stylers':[{'color':'#0c4152'},{'lightness':5}]},{'featureType':'road.highway','elementType':'geometry.fill','stylers':[{'color':'#000000'}]},{'featureType':'road.highway','elementType':'geometry.stroke','stylers':[{'color':'#0b434f'},{'lightness':25}]},{'featureType':'road.arterial','elementType':'geometry.fill','stylers':[{'color':'#000000'}]},{'featureType':'road.arterial','elementType':'geometry.stroke','stylers':[{'color':'#0b3d51'},{'lightness':16}]},{'featureType':'road.local','elementType':'geometry','stylers':[{'color':'#000000'}]},{'elementType':'labels.text.fill','stylers':[{'color':'#ffffff'}]},{'elementType':'labels.text.stroke','stylers':[{'color':'#000000'},{'lightness':13}]},{'featureType':'transit','stylers':[{'color':'#146474'}]},{'featureType':'administrative','elementType':'geometry.fill','stylers':[{'color':'#000000'}]},{'featureType':'administrative','elementType':'geometry.stroke','stylers':[{'color':'#144b53'},{'lightness':14},{'weight':1.4}]}]
+                  };
+                  var map = new google.maps.Map(document.getElementById('map-canvas'),
+                      mapOptions);
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
 
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
@@ -49,16 +58,18 @@
         <script src="bower_components/underscore/underscore.js"></script>
         <script src="bower_components/backbone/backbone.js"></script>
         <script src="bower_components/moment/moment.js"></script>
+        <script src="bower_components/d3/d3.min.js"></script>
         <!-- endbuild -->
 
         <!-- Load demo history -->
         <script src="files/demo.json"></script> 
-        
+
         <!-- build:js({.tmp,app}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <script src="scripts/templates.js"></script>
         <script src="scripts/models/trip.js"></script>
         <script src="scripts/collections/TripHistory.js"></script>
+        <script src="scripts/models/something.js"></script>
         <!-- endbuild -->
 </body>
 </html>

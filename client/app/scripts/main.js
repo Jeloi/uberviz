@@ -12,29 +12,14 @@ window.Uberviz = {
     }
 };
 
-$(document).ready(function () {
-    // 'use strict';
-    Uberviz.init();
 
-    // var history = new Uberviz.Collections.TripHistory();
-    // history.url = "files/demo.json";
-    // console.log(history.url);
+// $(document).ready(function () {
+//     // 'use strict';
+//     Uberviz.init();
 
-    // history.fetch();
+//     console.log(demoHistory["history"]);
+//     tripHistory = new Uberviz.Collections.TripHistory(demoHistory["history"], {parse: true});
 
-    // console.log(history["count"]);
+//     console.log(tripHistory.models[0].attributes);
 
-    // console.log(demoHistory);
-    console.log(demoHistory["history"]);
-    tripHistory = new Uberviz.Collections.TripHistory(demoHistory["history"]);
-
-    console.log(tripHistory.models[0].attributes);
-
-
-
-    // $.get('/files/demo.json', function(data) {
-    //     demoHistory = data;
-    //     console.log(demoHistory["count"]);
-    // });
-    
-});
+// });

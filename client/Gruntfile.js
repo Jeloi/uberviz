@@ -277,6 +277,7 @@ module.exports = function (grunt) {
             'clean:server',
             'createDefaultTemplate',
             'jst',
+            'connect:test',
             'connect:livereload',
             'open:server',
             'watch'

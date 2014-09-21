@@ -12,8 +12,8 @@ Uberviz.Collections = Uberviz.Collections || {};
         url: '/history',
 
         parse: function(response) {
-        	results = _map(response.results, function(trip, index) {
-        		trip.id = trip.uuid;
+        	var results = _.map(response, function(trip, index) {
+        		trip.id = index;  
         		return trip;
         	});
           return results;
