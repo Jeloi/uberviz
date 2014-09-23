@@ -1,11 +1,11 @@
-/*global Uberviz, Backbone*/
+/*global App, Backbone*/
 
-Uberviz.Models = Uberviz.Models || {};
+App.Models = App.Models || {};
 
 (function () {
     'use strict';
 
-    Uberviz.Models.Trip = Backbone.Model.extend({
+    App.Models.Trip = Backbone.Model.extend({
 
         url: '',
 

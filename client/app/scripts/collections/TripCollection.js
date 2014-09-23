@@ -1,13 +1,13 @@
-/*global Uberviz, Backbone*/
+/*global App, Backbone*/
 
-Uberviz.Collections = Uberviz.Collections || {};
+App.Collections = App.Collections || {};
 
 (function () {
     'use strict';
 
-    Uberviz.Collections.TripCollection = Backbone.Collection.extend({
+    App.Collections.TripCollection = Backbone.Collection.extend({
 
-        model: Uberviz.Models.Trip,
+        model: App.Models.Trip,
 
         // url: '/history',
 

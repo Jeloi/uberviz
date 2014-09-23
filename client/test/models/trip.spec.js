@@ -4,7 +4,7 @@
 describe('Trip Model', function () {
 
     beforeEach(function () {
-        this.TripModel = new Uberviz.Models.Trip();
+        this.TripModel = new App.Models.Trip();
     });
 
     it('do things', function() {

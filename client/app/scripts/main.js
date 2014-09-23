@@ -1,7 +1,7 @@
-/*global Uberviz, $*/
+/*global App, $*/
 
 
-window.Uberviz = {
+window.App = {
     Models: {},
     Collections: {},
     Views: {},
@@ -15,13 +15,13 @@ window.Uberviz = {
 
 $(document).ready(function () {
     // 'use strict';
-    Uberviz.init();
+    App.init();
 
-    console.log(demoHistory["history"]);
-    tripCollection = new Uberviz.Collections.TripCollection(demoHistory["history"], {parse: true});
+    // TripCollection Object
+    tripCollection = new App.Collections.TripCollection(demoHistory["history"], {parse: true});
 
-    console.log(tripCollection.models[0].attributes);
-
-    var appView = new Uberviz.Views.AppView();
+    // Views
+    var appView = new App.Views.AppView();
+    var tripCollectionView = new App.Trip
 
 });

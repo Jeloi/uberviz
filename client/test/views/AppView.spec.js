@@ -4,7 +4,7 @@
 describe('AppView View', function () {
 
     beforeEach(function () {
-        this.AppViewView = new Uberviz.Views.AppView();
+        this.AppViewView = new App.Views.AppView();
     });
 
     it('do things', function() {

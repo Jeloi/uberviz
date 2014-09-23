@@ -1,7 +1,7 @@
 {
   "generator-backbone": {
     "appPath": "app",
-    "appName": "Uberviz",
+    "appName": "App",
     "testFramework": "mocha",
     "templateFramework": "lodash",
     "coffee": false,

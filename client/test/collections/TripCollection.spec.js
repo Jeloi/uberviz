@@ -4,7 +4,7 @@
 describe('TripCollection Collection', function () {
 
     beforeEach(function () {
-        this.tripCollection = new Uberviz.Collections.TripCollection();
+        this.tripCollection = new App.Collections.TripCollection();
     });
 
     it('should do something', function() {

@@ -46,7 +46,7 @@ if (app.get('env') === 'development') {
 // Production Settings
 if (app.get('env') === 'production') {
     // Production Application Settings
-    app.set('baseURL', 'http://uberviz.co'); //TODO: Pick my production url
+    app.set('baseURL', 'http://App.co'); //TODO: Pick my production url
 
     // changes it to use the optimized version for production
     app.use(express.static(path.join(__dirname, '/dist')));
