@@ -18,9 +18,9 @@ $(document).ready(function () {
     Uberviz.init();
 
     console.log(demoHistory["history"]);
-    tripHistory = new Uberviz.Collections.TripHistory(demoHistory["history"], {parse: true});
+    tripCollection = new Uberviz.Collections.TripCollection(demoHistory["history"], {parse: true});
 
-    console.log(tripHistory.models[0].attributes);
+    console.log(tripCollection.models[0].attributes);
 
     var appView = new Uberviz.Views.AppView();
 
