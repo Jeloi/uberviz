@@ -1,11 +1,11 @@
-/*global Uberviz, Backbone, JST*/
+/*global App, Backbone, JST*/
 
-Uberviz.Views = Uberviz.Views || {};
+App.Views = App.Views || {};
 
 (function () {
     'use strict';
 
-    Uberviz.Views.AppView = Backbone.View.extend({
+    App.Views.AppView = Backbone.View.extend({
 
         el: "#AppView",
 
