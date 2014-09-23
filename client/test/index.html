@@ -7,6 +7,7 @@
 </head>
 <body>
     <div id="mocha"></div>
+    <div id="map-canvas"></div>
     <script src="bower_components/mocha/mocha.js"></script>
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/underscore/underscore.js"></script>
@@ -19,12 +20,17 @@
         var should = chai.should();
     </script>
 
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBiPGKRR89xKbbBHIWPD6wUFV40nC2FwSs"></script>  
+
     <!-- include source files here... -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/templates.js"></script> <!-- This is loaded from .tmp -->
     <script src="scripts/collections/TripHistory.js"></script>
+    <script src="scripts/views/AppView.js"></script>
 
     <!-- include spec files here... -->
     <script src="spec/test.js"></script>
+    <script src="views/AppView.spec.js"></script>
     <script src="collections/TripHistory.spec.js"></script>
 
     <script>mocha.run()</script>

@@ -1,5 +1,5 @@
 {
-  "name": "client",
+  "name": "Uberviz",
   "private": true,
   "dependencies": {
     "chai": "~1.8.0",

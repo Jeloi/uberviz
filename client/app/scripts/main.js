@@ -13,13 +13,15 @@ window.Uberviz = {
 };
 
 
-// $(document).ready(function () {
-//     // 'use strict';
-//     Uberviz.init();
+$(document).ready(function () {
+    // 'use strict';
+    Uberviz.init();
 
-//     console.log(demoHistory["history"]);
-//     tripHistory = new Uberviz.Collections.TripHistory(demoHistory["history"], {parse: true});
+    console.log(demoHistory["history"]);
+    tripHistory = new Uberviz.Collections.TripHistory(demoHistory["history"], {parse: true});
 
-//     console.log(tripHistory.models[0].attributes);
+    console.log(tripHistory.models[0].attributes);
 
-// });
+    var appView = new Uberviz.Views.AppView();
+
+});
