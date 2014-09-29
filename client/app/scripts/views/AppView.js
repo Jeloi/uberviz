@@ -7,7 +7,7 @@ App.Views = App.Views || {};
 
     App.Views.AppView = Backbone.View.extend({
 
-        el: "#AppView",
+        el: "#app-view",
 
         template: JST['app/scripts/templates/AppView.ejs'],
 
@@ -25,9 +25,9 @@ App.Views = App.Views || {};
             // this.listenTo(this.model, 'change', this.render);
 
             // Initialize map
+            self.render();
             self._initialize_map();
 
-            self.render();
 
             // Create Views
             // var mapView = new App.MapView({model: tripCollection, map: self.map});
