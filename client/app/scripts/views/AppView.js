@@ -27,6 +27,8 @@ App.Views = App.Views || {};
             // Initialize map
             self._initialize_map();
 
+            self.render();
+
             // Create Views
             // var mapView = new App.MapView({model: tripCollection, map: self.map});
             // var tripListView = new App.TripListView({model: tripCollection, map: self.map});
@@ -36,6 +38,7 @@ App.Views = App.Views || {};
 
         render: function () {
             this.$el.html(this.template());
+            console.log("rendering appview");
         },
 
         _initialize_map : function() {

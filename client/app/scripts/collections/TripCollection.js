@@ -17,6 +17,12 @@ App.Collections = App.Collections || {};
             });
         },
 
+        // Trips are sorted by their time
+        comparator: function(trip) {
+          return trip.get('start_time');
+        },
+
+        // Sets the id attribute on each trip when parsed (redundant, just an exercise)
         parse: function(response) {
         	var results = _.map(response, function(trip, index) {
         		trip.id = index;  
