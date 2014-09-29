@@ -22,18 +22,9 @@ App.Views = App.Views || {};
         initialize: function () {
             var self = this;
 
-            // this.listenTo(this.model, 'change', this.render);
-
             // Initialize map
             self.render();
             self._initialize_map();
-
-
-            // Create Views
-            // var mapView = new App.MapView({model: tripCollection, map: self.map});
-            // var tripListView = new App.TripListView({model: tripCollection, map: self.map});
-
-            
         },
 
         render: function () {
@@ -52,8 +43,18 @@ App.Views = App.Views || {};
               disableDefaultUI: true,
               styles: styles
           };
+
+          // Create map with mapOptions
           this.map = new google.maps.Map(document.getElementById('map-canvas'),
             mapOptions);
+
+          // Save the direction service and display onto the map
+          this.map.directionsService = new google.maps.DirectionsService();
+          this.map.directionsDisplay = new google.maps.DirectionsRenderer({
+            suppressMarkers: true,
+            polylineOptions:{strokeColor:'#9ee9f7', strokeWeight: '5'}
+          });
+          this.map.directionsDisplay.setMap(this.map);
         }
 
     });

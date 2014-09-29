@@ -62,6 +62,17 @@ App.Views = App.Views || {};
                 bounds.extend(self.endMarker.position)
                 self.map.fitBounds (bounds);
             };
+            // Use Google Direction Services to get route
+            var request = {
+                origin: self.startMarker.position,
+                destination: self.endMarker.position,
+                travelMode: google.maps.TravelMode.DRIVING
+            };
+            self.map.directionsService.route(request, function(response, status) {
+              if (status == google.maps.DirectionsStatus.OK) {
+                self.map.directionsDisplay.setDirections(response);
+              }
+            });
         },
 
         // Hide both start and end markers
