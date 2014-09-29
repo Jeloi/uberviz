@@ -31,6 +31,10 @@ App.Models = App.Models || {};
 
         parse: function(response, options)  {
             return response;
+        },
+
+        doSomething: function() {
+            console.log("doooo");
         }
     });
 

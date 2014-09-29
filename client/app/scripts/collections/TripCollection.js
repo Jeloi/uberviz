@@ -31,7 +31,8 @@ App.Collections = App.Collections || {};
           return results;
         },
 
-        processModels: function() {
+        // For each trip, create a marker view that references that trip
+        generateTripViews: function() {
             console.log(this);
             var i = 0;
             _.each(this.models, function(trip) {

@@ -1,4 +1,19 @@
-html, body, #app-view, #map-canvas
+html, body, #app-view, #map-canvas, #left-container
 { 
 	height: 100%; margin: 0; padding: 0;
+}
+$uber-blue: #0a081a;
+
+$sidebar-width: 300;
+#left-container {
+	margin-right: $sidebar-width+px;
+}
+
+#sidebar {
+	top: 0;
+	right: 0;
+	height: 100%;
+	background: $uber-blue;
+	position: absolute;
+	width: $sidebar-width+px;
 }

@@ -21,6 +21,6 @@ $(document).ready(function () {
 
     // Views
     appView = new App.Views.AppView();
-    tripCollection.processModels();
+    tripCollection.generateTripViews();
 
 });

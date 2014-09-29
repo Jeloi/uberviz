@@ -387,7 +387,18 @@ html {
   -webkit-font-smoothing: antialiased;
   /* [5] */ }
 
-html, body, #app-view, #map-canvas {
+html, body, #app-view, #map-canvas, #left-container {
   height: 100%;
   margin: 0;
   padding: 0; }
+
+#left-container {
+  margin-right: 300px; }
+
+#sidebar {
+  top: 0;
+  right: 0;
+  height: 100%;
+  background: #0a081a;
+  position: absolute;
+  width: 300px; }

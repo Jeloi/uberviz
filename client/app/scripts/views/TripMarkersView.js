@@ -21,8 +21,14 @@ App.Views = App.Views || {};
             // this.listenTo(this.model, 'change', this.render);
             var self = this;
 
+            // Set model on self
             self.model = options.model;
-            self.model.on('remove', self.remove, self);
+            // Set this view on model
+            self.model.tripMarkerView = self;
+
+            // Hide the Marker when the model is hidden
+            self.model.on('hide', self.hide, self);
+            self.model.on('show', self.show, self);
 
             self.map = options.map;
 
@@ -44,11 +50,27 @@ App.Views = App.Views || {};
             //     position: new google.maps.LatLng(endLocation.latitude, endLocation.longitude),
             // });
 
+            self.hide();
+
         },
 
         render: function () {
             this.$el.html(this.template(this.model.toJSON()));
+        },
+
+        // Hide both start and end markers
+        hide: function() {
+            this.startMarker.setVisible(false);
+            // this.endMarker.setVisible(false);
+        },
+
+        // Show both start and end markers
+        show: function() {
+            console.log('got to show');
+            this.startMarker.setVisible(true);
+            // this.endMarker.setVisible(true);
         }
+
 
     });
 
