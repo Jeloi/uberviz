@@ -24,8 +24,14 @@ App.Views = App.Views || {};
 
             // this.listenTo(this.model, 'change', this.render);
 
-            // initialize map
+            // Initialize map
             self._initialize_map();
+
+            // Create Views
+            // var mapView = new App.MapView({model: tripCollection, map: self.map});
+            // var tripListView = new App.TripListView({model: tripCollection, map: self.map});
+
+            
         },
 
         render: function () {
