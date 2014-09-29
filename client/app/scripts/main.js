@@ -23,4 +23,10 @@ $(document).ready(function () {
     appView = new App.Views.AppView();
     tripCollection.generateTripViews();
 
+
+    // Variables
+    App.Variables = {
+        focusedTrip: null
+    }
+
 });

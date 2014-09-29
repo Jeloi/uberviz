@@ -49,6 +49,7 @@ App.Views = App.Views || {};
               zoom: 13,
               mapTypeId: google.maps.MapTypeId.ROADMAP,
               center: center,
+              disableDefaultUI: true,
               styles: styles
           };
           this.map = new google.maps.Map(document.getElementById('map-canvas'),

@@ -33,10 +33,12 @@ App.Collections = App.Collections || {};
 
         // For each trip, create a marker view that references that trip
         generateTripViews: function() {
-            console.log(this);
             var i = 0;
             _.each(this.models, function(trip) {
-                var marker = new App.Views.TripMarkersView({model: trip, map: appView.map})
+                var marker = new App.Views.TripMarkersView({model: trip, map: appView.map});
+                var listItem = new App.Views.TripListItemView({model: trip});
+                // Renders the listItem view, gets its DOM element, and appends it to the trip list
+                $('#trip-list').append(listItem.render().el);
             });
         }
 

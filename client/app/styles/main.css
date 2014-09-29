@@ -347,9 +347,6 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-html {
-  background: blue; }
-
 /*------------------------------------*\
     #PAGE
 \*------------------------------------*/
@@ -392,6 +389,12 @@ html, body, #app-view, #map-canvas, #left-container {
   margin: 0;
   padding: 0; }
 
+body {
+  background: #0a081a;
+  color: white;
+  font-family: Helvetica, Arial;
+  font-size: 13px; }
+
 #left-container {
   margin-right: 300px; }
 
@@ -399,6 +402,20 @@ html, body, #app-view, #map-canvas, #left-container {
   top: 0;
   right: 0;
   height: 100%;
-  background: #0a081a;
   position: absolute;
   width: 300px; }
+
+#trip-list {
+  height: 100%;
+  overflow-y: scroll; }
+
+.list-item {
+  padding: 10px;
+  list-style: none; }
+  .list-item:hover {
+    background: rgba(255, 255, 255, 0.1); }
+  .list-item--focused {
+    background: #44cbe4 !important; }
+  .list-item h3 {
+    margin: 0;
+    margin-bottom: 0.1em; }
