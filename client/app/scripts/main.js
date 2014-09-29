@@ -29,4 +29,9 @@ $(document).ready(function () {
         focusedTrip: null
     }
 
+    // UI toggles
+    App.Toggles = {
+        zoomTrip: true
+    }
+
 });

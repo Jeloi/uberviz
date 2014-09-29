@@ -24,7 +24,7 @@ App.Views = App.Views || {};
 
             // Hide the Marker when the model is hidden
             self.model.on('unfocus', self.hide, self);
-            self.model.on('focus', self.show, self);
+            self.model.on('focus', self.focus, self);
 
             self.map = options.map;
 
@@ -42,23 +42,38 @@ App.Views = App.Views || {};
                 id : self.model.get('company_id')
             });
 
-            // self.endMarker = new google.maps.Marker({
-            //     map: self.map,
-            //     position: new google.maps.LatLng(endLocation.latitude, endLocation.longitude),
-            // });
+            self.endMarker = new google.maps.Marker({
+                map: self.map,
+                position: new google.maps.LatLng(endLocation.latitude, endLocation.longitude),
+                visible: false,
+                icon : 'images/4.png'
+            });
 
+        },
+
+        focus: function() {
+            var self  = this;
+            // Call show to show the markers
+            self.show();
+            if (App.Toggles.zoomTrip) {
+                //  Create a new viewpoint bound
+                var bounds = new google.maps.LatLngBounds ();
+                bounds.extend(self.startMarker.position)
+                bounds.extend(self.endMarker.position)
+                self.map.fitBounds (bounds);
+            };
         },
 
         // Hide both start and end markers
         hide: function() {
             this.startMarker.setVisible(false);
-            // this.endMarker.setVisible(false);
+            this.endMarker.setVisible(false);
         },
 
         // Show both start and end markers
         show: function() {
             this.startMarker.setVisible(true);
-            // this.endMarker.setVisible(true);
+            this.endMarker.setVisible(true);
         }
 
 
