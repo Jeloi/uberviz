@@ -411,7 +411,8 @@ body {
 
 .list-item {
   padding: 10px;
-  list-style: none; }
+  list-style: none;
+  cursor: pointer; }
   .list-item:hover {
     background: rgba(255, 255, 255, 0.1); }
   .list-item--focused {
