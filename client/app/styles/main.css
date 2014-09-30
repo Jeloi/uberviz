@@ -419,3 +419,54 @@ body {
   .list-item h3 {
     margin: 0;
     margin-bottom: 0.1em; }
+
+.pin {
+  height: 4px;
+  width: 4px;
+  top: 7px;
+  left: 7px;
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6; }
+  .pin--start {
+    background: #67E77F; }
+  .pin--end {
+    background: #E94465; }
+
+.focused-pin-wrapper {
+  position: relative;
+  top: 15px;
+  height: 30px;
+  width: 30px; }
+  .focused-pin-wrapper .pin--focused {
+    height: 8px;
+    width: 8px;
+    top: 11px;
+    left: 11px;
+    opacity: 1; }
+  .focused-pin-wrapper .pulse-ring {
+    -webkit-border-radius: 30px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+    opacity: 0; }
+    .focused-pin-wrapper .pulse-ring--start {
+      border: 3px solid #67E77F; }
+    .focused-pin-wrapper .pulse-ring--end {
+      border: 3px solid #E94465; }
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.1, 0.1);
+    opacity: 0; }
+
+  50% {
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: scale(1.2, 1.2);
+    opacity: 0; } }

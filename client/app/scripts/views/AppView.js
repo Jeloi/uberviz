@@ -51,8 +51,8 @@ App.Views = App.Views || {};
           // Save the direction service and display onto the map
           this.map.directionsService = new google.maps.DirectionsService();
           this.map.directionsDisplay = new google.maps.DirectionsRenderer({
-            suppressMarkers: true,
-            polylineOptions:{strokeColor:'#9ee9f7', strokeWeight: '5'}
+            suppressMarkers: true
+            // polylineOptions:{strokeColor:'#9ee9f7', strokeWeight: '5'}
           });
           this.map.directionsDisplay.setMap(this.map);
         }

@@ -31,30 +31,50 @@ App.Views = App.Views || {};
             var startLocation = self.model.get("start_location");
             var endLocation = self.model.get("end_location");
 
-            self.startMarker = new google.maps.Marker({
-                map: self.map,
-                position: new google.maps.LatLng(startLocation.latitude, startLocation.longitude),
-                // animation: google.maps.Animation.DROP,
-                visible: false,
-                icon : 'images/4.png',
-                title: self.model.name,
-                descr : self.model.get('descr'),
-                id : self.model.get('company_id')
-            });
+            // self.startMarker = new google.maps.Marker({
+            //     map: self.map,
+            //     position: new google.maps.LatLng(startLocation.latitude, startLocation.longitude),
+            //     // animation: google.maps.Animation.DROP,
+            //     visible: false,
+            //     icon : 'images/4.png',
+            //     title: self.model.name,
+            //     descr : self.model.get('descr'),
+            //     id : self.model.get('company_id')
+            // });
 
-            self.endMarker = new google.maps.Marker({
-                map: self.map,
-                position: new google.maps.LatLng(endLocation.latitude, endLocation.longitude),
-                visible: false,
-                icon : 'images/4.png'
-            });
+            // self.endMarker = new google.maps.Marker({
+            //     map: self.map,
+            //     position: new google.maps.LatLng(endLocation.latitude, endLocation.longitude),
+            //     visible: false,
+            //     icon : 'images/4.png'
+            // });
+            
+            self.startMarker = new RichMarker({
+                                position: new google.maps.LatLng(startLocation.latitude, startLocation.longitude),
+                                map: self.map,
+                                content: '<div class="pin start"></div>',
+                                visible: false
+                            });
+
+            self.endMarker = new RichMarker({
+                                position: new google.maps.LatLng(endLocation.latitude, endLocation.longitude),
+                                map: self.map,
+                                content: '<div class="pin end"></div>',
+                                visible: false
+                            });
+            self.endMarker.setShadow("");
+            self.startMarker.setShadow("");
 
         },
 
         focus: function() {
             var self  = this;
+            // Focus styling and animation for markers
+            self.startMarker.setContent('<div class="focused-pin-wrapper"><div class="pin pin--start pin--focused"></div><div class="pulse-ring pulse-ring--start"></div></div>');
+            self.endMarker.setContent('<div class="focused-pin-wrapper"><div class="pin pin--end pin--focused"></div><div class="pulse-ring pulse-ring--end"></div></div>');
             // Call show to show the markers
             self.show();
+            // Zoom the trip by fitting the view to its bounds
             if (App.Toggles.zoomTrip) {
                 //  Create a new viewpoint bound
                 var bounds = new google.maps.LatLngBounds ();
@@ -73,6 +93,7 @@ App.Views = App.Views || {};
                 self.map.directionsDisplay.setDirections(response);
               }
             });
+
         },
 
         // Hide both start and end markers
