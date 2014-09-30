@@ -2,11 +2,18 @@ require 'json'
 require 'sequel'
 require "date"
 require 'pp'
+require "csv"
 require "active_support/core_ext"
 require './helpers'
 
 DB = Sequel.sqlite('luckyphil.db')
+POKEMON = Hash.new()
 START_DATE = DateTime.new(2014,8,1,0,0,0,'-5')
+
+# Setup Pokemon {:id => :name} Hash
+CSV.read("pokemon.csv").each do |pair|
+  POKEMON[pair[0].to_i] = pair[1]
+end
 
 # Phil's existential state
 class Phil
@@ -60,8 +67,7 @@ class Phil
   end
 
   def go_home
-
-    
+    # TODO
   end
 
   def wander
@@ -93,6 +99,9 @@ class Phil
     trip[:end_time] = (trip[:start_time] + (trip[:distance]/(SPEED/60.0)).minutes).to_time.utc.to_i
     trip[:request_time] = trip[:request_time].to_time.utc.to_i
     trip[:start_time] = trip[:start_time].to_time.utc.to_i
+    # Driver id and Name
+    trip[:driver_id] = rand(1..151) # only the original 151 pokemon
+    trip[:driver_name] = POKEMON[trip[:driver_id]]
 
     @trip_history.push(trip) # Add trip to trip_history
 

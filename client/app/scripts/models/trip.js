@@ -13,12 +13,9 @@ App.Models = App.Models || {};
             // Add human-readable and D3 attributes to each trip
             this.set("day", moment.unix(this.get("start_time")).format("dddd"));
             this.set("hour", moment.unix(this.get("start_time")).format("H"));
+            this.set("distance", Math.round(this.get("distance") * 100) / 100);
             this.set("start_address", this.shortAddress(this.get("start_location")));
             this.set("end_address", this.shortAddress(this.get("end_location")));
-
-            // Could move these to View rendering
-            this.set("display_start", moment.unix(this.get("start_time")).format("dddd, MMMM Do YYYY, h:mm a"));
-            this.set("display_end", moment.unix(this.get("end_time")).format("dddd, MMMM Do YYYY, h:mm a"));
 
             this.on('selected', function(msg) {
                 alert("Trip #"+this.id)
@@ -46,6 +43,7 @@ App.Models = App.Models || {};
                 App.Variables.focusedTrip = self;
                 self.trigger('focus');
             }
+            appView.trigger('newFocus'); // Let appView know there's a new focused trip
         },
 
         // Slice the ', United States' off the end of an address from a location obj

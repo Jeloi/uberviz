@@ -1,0 +1,13 @@
+<div class="trip-info__driver-icon trip-info__block" style="background-image: url('/images/<%= data.driver_id %>.png')">
+</div>
+<div class="trip-info__start-info trip-info__block">
+	<div><span class="trip-info__start-time"><%= data.time_start %></span> - <%= data.start_date %></div>
+	<div class="trip-info__address"><%= data.start_address %></div>
+	<div><span class="trip-info__label">Driver: </span><span class="trip-info__small-text"><%= data.driver_name %></span></div>
+</div>
+<div class="trip-info__end-info trip-info__block">
+	<div><span class="trip-info__end-time"><%= data.time_end %></span> - <%= data.end_date %></div>
+	<div class="trip-info__address"><%= data.end_address %></div>
+	<div><span class="trip-info__label">Distance: </span><span class="trip-info__small-text"><%= data.distance %> Mi</span></div>
+</div>
+

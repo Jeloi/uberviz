@@ -5,6 +5,9 @@ html, body, #app-view, #map-canvas, #left-container
 
 $dark-blue: #0a081a;
 $light-blue: #44cbe4;
+$start-green: #67E77F;
+$end-red: #E94465;
+$sidebar-width: 300;
 
 body {
 	background: $dark-blue;
@@ -15,11 +18,13 @@ body {
 
 
 
-$sidebar-width: 300;
+// Left Container
 #left-container {
 	margin-right: $sidebar-width+px;
+	position: relative;
 }
 
+// Sidebar
 #sidebar {
 	top: 0;
 	right: 0;
@@ -28,11 +33,66 @@ $sidebar-width: 300;
 	width: $sidebar-width+px;
 }
 
+// Trip Info
+.trip-info {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	padding: 10px;
+	// height: 100px;
+	// width: 100px;
+	background: rgba(0,0,0,0.8);
+}
+
+	.trip-info__block {
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 8px;
+		font-size: 12px;
+		color: rgba(255,255,255,0.8);
+		&:first-child {
+			padding-left: 0;
+		}
+	}
+	
+	.trip-info__start-time { color: $start-green; font-weight: bold; }
+	.trip-info__end-time { color: $end-red; font-weight: bold; }
+
+	.trip-info__label {
+		@extend .trip-info__small-text;
+		font-weight: bold;
+		color: white;
+	}
+
+	.trip-info__driver-icon {
+		width: 50px;
+		height: 50px;
+		// border-radius: 10%;
+		background-size: cover;
+	}
+	
+	$line-buffer: 10px;
+	.trip-info__start-info {
+		padding-right: $line-buffer;
+		border-right: 1px solid white;
+	}
+
+	.trip-info__end-info {
+		padding-left: $line-buffer - 2;
+	}
+
+	.trip-info__small-text {
+		font-size: 0.8em;
+		text-transform: uppercase;
+	}
+
+// Trip List
 #trip-list {
 	height: 100%;
 	overflow-y: scroll;
 }
 
+// Trip List Item
 .list-item {
 	padding: 10px;
 	list-style: none;
@@ -54,6 +114,7 @@ $sidebar-width: 300;
 	}
 }
 
+// Normal Pin
 .pin {
 	height: 4px;
 	width: 4px;
@@ -64,13 +125,14 @@ $sidebar-width: 300;
 	opacity: 0.6;
 
 	&--start {
-		background: #67E77F;
+		background: $start-green;
 	}
 	&--end {
-		background: #E94465;
+		background: $end-red;
 	}
 }
 
+// Focused Pin
 .focused-pin-wrapper {
 	$big: 30;
 	$small: 8;
@@ -89,10 +151,10 @@ $sidebar-width: 300;
 
 	.pulse-ring {
 		&--start {
-			border: 3px solid #67E77F;
+			border: 3px solid $start-green;
 		}
 		&--end {
-			border: 3px solid #E94465;
+			border: 3px solid $end-red;
 		}
 	    -webkit-border-radius: 30px;
 	    height: $big+px;
