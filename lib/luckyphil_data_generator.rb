@@ -49,14 +49,11 @@ class Phil
   def going_out?
     return ["Thursday"]
   end
-  def is_bored?
-    
-  end
 
   def go_to meal_hours
     trip = {} # Trip Hash
     trip[:request_time] = today + rand_between(meal_hours).hours
-    trip[:start_time] = (trip[:request_time] + rand(3..8).minutes)
+    trip[:start_time] = (trip[:request_time] + rand(3..8).minutes) # Let's say his Uber ride takes 3-8 minutes
     chipotle = DB[:chipotles][id: rand(1..60)] # Randomly pick a Chipotle
     trip[:end_location] = {
       address: chipotle[:address],
@@ -66,10 +63,20 @@ class Phil
     generate_trip trip
   end
 
+  # Go home
   def go_home
-    # TODO
+    trip = {} # Trip Hash
+    trip[:request_time] = Time.at(@last_meal) + rand(30..60).minutes
+    trip[:start_time] = (trip[:request_time] + rand(3..8).minutes) 
+    trip[:end_location] = {
+      address: HOME_ADDRESS,
+      latitude: HOME_LAT,
+      longitude: HOME_LONG,
+    }
+    generate_trip trip
   end
 
+  # Wander some random amount in N and W directions
   def wander
     lat_wander = miles_to_degrees(N_WANDER_MILES)
     long_wander = miles_to_degrees(W_WANDER_MILES)
@@ -109,7 +116,6 @@ class Phil
     @current_location = [trip[:end_location][:latitude], trip[:end_location][:longitude]]
     @current_address = trip[:end_location][:address]
     @last_meal = trip[:end_time]
-
   end
 
   # Export Phil's history to Json in the output_file, mirroring the Uber API's history endpoint schema
@@ -148,21 +154,19 @@ def generate_awesome_month start_date, output_file
 
     # Breakfast
     luckyphil.go_to breakfast
-    # luckyphil.wander
 
     # # Lunch
     luckyphil.go_to lunch
-    # luckyphil.wander
 
     # # If Phil is tuesday livin' he goes home for tacos
     if luckyphil.is_tuesday_living?
-      # luckyphil.go_home
+      luckyphil.go_home
       next # That's a wrap on the day
     end
 
     luckyphil.go_to dinner
 
-    # luckyphil.go_home
+    luckyphil.go_home
 
   end
 
@@ -170,5 +174,5 @@ def generate_awesome_month start_date, output_file
 end
 
 
-# Lets gooo
+# Generate Phil's Awesome month to text file (input filename as argument)
 generate_awesome_month START_DATE, ARGV[0]
