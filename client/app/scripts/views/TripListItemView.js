@@ -13,6 +13,8 @@ App.Views = App.Views || {};
 
         id: '',
 
+        container: '#trip-list',
+
         className: 'list-item',
 
         events: {
@@ -27,6 +29,7 @@ App.Views = App.Views || {};
 
             this.model.on('focus', self.focus, self);
             this.model.on('unfocus', self.unfocus, self);
+            this.render();
         },
 
         render: function () {
@@ -35,6 +38,7 @@ App.Views = App.Views || {};
             data.display_time = moment.unix(data.start_time).format("h:mm a")
             data.display_date = moment.unix(data.start_time).format("dddd, MMMM Do YYYY")
             this.$el.html(this.template(data));
+            $(this.container).append(this.el);
             return this;
         },
 

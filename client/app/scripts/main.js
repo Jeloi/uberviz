@@ -1,6 +1,5 @@
 /*global App, $*/
 
-
 window.App = {
     Models: {},
     Collections: {},
@@ -8,7 +7,7 @@ window.App = {
     Routers: {},
     init: function () {
         'use strict';
-        console.log('Hello from Backbone!');
+        console.log('Uberviz app lets go!');
     }
 };
 
@@ -31,9 +30,9 @@ $(document).ready(function () {
     // Views
     appView = new App.Views.AppView();
     tripView = new App.Views.TripInfoView();
-
-    tripCollection.generateTripViews();
+    barChartView = new App.Views.DaysBarChartView({collection: tripCollection});
     $('.trip-info').append(tripView.render().el)
+    tripCollection.generateTripViews();
 
 
 

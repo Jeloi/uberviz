@@ -17,7 +17,9 @@ App.Views = App.Views || {};
 
         className: '',
 
-        events: {},
+        events: {
+          'click .chart-button': 'toggleChart'
+        },
 
         initialize: function () {
             var self = this;
@@ -29,7 +31,6 @@ App.Views = App.Views || {};
 
         render: function () {
             this.$el.html(this.template());
-            console.log("rendering appview");
         },
 
         _initialize_map : function() {
@@ -55,6 +56,10 @@ App.Views = App.Views || {};
             polylineOptions:{strokeColor:'#3DCFFF', strokeWeight: '3', strokeOpacity: '1'}
           });
           this.map.directionsDisplay.setMap(this.map);
+        },
+
+        toggleChart: function() {
+          $('#days-bar-chart').fadeToggle();
         }
 
     });

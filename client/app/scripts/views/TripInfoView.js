@@ -29,9 +29,8 @@ App.Views = App.Views || {};
                 data.time_end = moment.unix(data.end_time).format("h:mm A")
                 data.start_date = moment.unix(data.start_time).format("MMMM Do YYYY");
                 data.end_date = moment.unix(data.end_time).format("MMMM Do YYYY");
-                // self.$el.parent().hide();
+                self.$el.parent().show();
                 self.$el.html(self.template(data));
-                // self.$el.parent().show();
                 // Animate
                 self.$el.parent().addClass('animated fadeIn');
                 //wait for animation to finish before removing classes

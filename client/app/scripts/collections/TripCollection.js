@@ -38,7 +38,7 @@ App.Collections = App.Collections || {};
                 var marker = new App.Views.TripMarkersView({model: trip, map: appView.map});
                 var listItem = new App.Views.TripListItemView({model: trip});
                 // Renders the listItem view, gets its DOM element, and appends it to the trip list
-                $('#trip-list').append(listItem.render().el);
+                // $('#trip-list').append(listItem.render().el);
             });
         }
 

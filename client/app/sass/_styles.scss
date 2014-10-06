@@ -35,16 +35,17 @@ body {
 
 // Trip Info
 .trip-info {
+	display: none;
 	position: absolute;
 	top: 20px;
 	left: 20px;
 	padding: 10px;
 	// height: 100px;
 	// width: 100px;
-	background: rgba(0,0,0,0.8);
+	background: rgba(10, 8, 26, 0.8);
 }
 
-	.trip-info__block {
+	.trip-info__section {
 		display: inline-block;
 		vertical-align: top;
 		padding-left: 8px;
@@ -171,4 +172,57 @@ body {
     0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
     50% {opacity: 1.0;}
     100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+// Chart Styles
+#days-bar-chart {
+	display: none;
+	svg {
+		background: $dark-blue;
+	}
+	color: white;
+	position: absolute;
+	bottom: 15px;
+	opacity: 0.9;
+	right: 5px;
+}
+.bar {
+  fill: $light-blue;
+}
+
+.bar:hover {
+  fill: $start-green;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: white;
+  shape-rendering: crispEdges;
+}
+
+.axis text {
+	// stroke: white;
+	fill: white;
+	shape-rendering: crispEdges;
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+.x.axis path {
+  display: none;
+}
+
+.chart-button {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	cursor: pointer;
+	color: white;
+	font-size: 0.8em;
+	text-transform: uppercase;
 }
